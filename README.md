@@ -1,16 +1,45 @@
-# Pbiometria_Web
+# IOT Beacon Web
 
-### El servidor ha sido realizado con Xampp
+Plataforma web encargada de **visualizar los datos enviados por la aplicación Android** tras detectar beacons emitidos por un sensor Arduino.
 
-### Para su funcionamiento descargar Xampp. Dentro del Xampp Control Panel pulsar en el boton "Start", tanto de Apache como de MySQL
-### Pulsar en el Control Panel el boton "explorer", esto abrirá una carpeta llamada "xampp" en la que hay otra llamada "htdocs"
-### Dentro de la carpeta de "htdoc", meter la carpeta del proyecto.
+Los datos se almacenan en una base de datos **MySQL** y se muestran en una interfaz web para su consulta.
 
-### Una vez realizados estos pasos importaremos la BBDD, para ello descargar la BBDD que se encuentra en la carpeta doc llamada "sprint0_pbiometria"
-### Volveremos al Xampp Control Panel y en la parte de MySQL pulsaremos "Admin", esto nos abrira una página web llamada phpmyadmin.
-### Dentro de PhPMyAdmin seleccionaremos nueva BBDD, y en el menu superior nos aparecera la opción de importar.
+## Proyecto relacionado
 
-### Una vez importada la BBDD, ya podremos acceder a nuestra web. Para acceder a la web necesitaremos tener SIEMPRE activo tanto Apache como MySQL.
-### Se puede acceder a la web con la siguiente direccion Url: http://localhost/Sprint_0Web/src/app/sensores/
+Sistema IoT basado en beacons compuesto por: Arduino Sensor → Android App → Web Dashboard
 
-### Como la BBDD ya tiene datos, nos debe aparecer la web con valores asignador. Si queremos ver los nuevos datos que se agregen a traves de nuestro disposivo móvil deberemos recargar la página ya sea con F5, o con la flecha
+Este repositorio forma parte de un proyecto completo compuesto por tres partes:
+
+- Arduino Beacon Sensor → https://github.com/holiwiiss/iot-beacon-arduino
+- Android Scanner App → https://github.com/holiwiiss/iot-beacon-android-studio
+- Web Monitoring Platform → https://github.com/TUUSUARIO/beacon-monitoring-web
+
+## Tecnologías
+
+- HTML
+- CSS
+- JavaScript
+- PHP
+- MySQL
+- XAMPP
+
+## Instalación
+
+1. Instalar **XAMPP**
+2. En el panel de control de **XAMPP**, iniciar:
+   - Apache
+   - MySQL
+3. Copiar el proyecto dentro del directorio `xampp/htdocs`, al que se puede acceder pulsando el botón *explorer* en el panel de control de **XAMPP**.
+4. Importar la base de datos, que se puede encontrar en este repositorio en la ruta: `doc/sprint0_pbiometria`. Para ello:
+    1. Abrir **phpMyAdmin** desde el botón *Admin* de MySQL.
+    2. Crear una nueva base de datos
+    3. Importar el archivo SQL
+
+## Acceso
+
+Una vez configurado el servidor, la web puede abrirse desde cualquier navegador con la siguiente URL: `http://localhost/Sprint_0Web/src/app/sensores/`, siempre que **Apache y MySQL estén activos** en XAMPP.
+
+Si el sistema está funcionando correctamente aparecerán datos almacenados en la base de datos.
+
+Para visualizar nuevos datos enviados desde la aplicación Android basta con **recargar la página**.
+
