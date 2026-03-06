@@ -12,7 +12,7 @@ Este repositorio forma parte de un proyecto completo compuesto por tres partes:
 
 - Arduino Beacon Sensor → https://github.com/holiwiiss/iot-beacon-arduino
 - Android Scanner App → https://github.com/holiwiiss/iot-beacon-android-studio
-- Web Monitoring Platform → https://github.com/TUUSUARIO/beacon-monitoring-web
+- Web Monitoring Platform → https://github.com/holiwiiss/iot-beacon-web
 
 ## Tecnologías
 
